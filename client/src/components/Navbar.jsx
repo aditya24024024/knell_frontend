@@ -10,6 +10,7 @@ import { reducerCases } from '../context/constants';
 import { useStateProvider } from '../context/StateContext';
 import img from './unnamed 1.svg'
 import ContextMenu from './ContextMenu';
+import AuthWrapper from './AuthWrapper.jsx';
 // import ContextMenu
 
 const Navbar = () => {
@@ -179,6 +180,7 @@ const Navbar = () => {
 
     return (
     <>
+      {state.showLoginModal && <AuthWrapper type="login" />}
           {isLoaded && (
         <nav
           className={`w-full px-24 flex justify-between items-center py-6  top-0 z-30 transition-all duration-300 ${
