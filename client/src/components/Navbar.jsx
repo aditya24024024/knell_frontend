@@ -180,7 +180,7 @@ const Navbar = () => {
 
     return (
     <>
-      {state.showLoginModal && <AuthWrapper type="login" />}
+      {showLoginModal && <AuthWrapper type="login" />}
           {isLoaded && (
         <nav
           className={`w-full px-24 flex justify-between items-center py-6  top-0 z-30 transition-all duration-300 ${
