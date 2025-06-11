@@ -10,7 +10,7 @@ import { reducerCases } from '../context/constants';
 import { useStateProvider } from '../context/StateContext';
 import img from './unnamed 1.svg'
 import ContextMenu from './ContextMenu';
-import AuthWrapper from './AuthWrapper.jsx';
+import AuthWrapper from './AuthWrapper';
 // import ContextMenu
 
 const Navbar = () => {
